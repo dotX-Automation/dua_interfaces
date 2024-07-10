@@ -1,0 +1,14 @@
+# 3D position setpoint.
+#
+# Roberto Masocco <r.masocco@dotxautomation.com>
+#
+# January 31, 2023
+
+# ROS 2 message header (with timestamp from ROS 2 clock)
+std_msgs/Header header
+
+# Position setpoint (meters)
+geometry_msgs/Point position_sp
+
+# Yaw angle setpoint [-PI +PI] (radians)
+float64 yaw_sp
