@@ -1,4 +1,4 @@
-# Ultra-WideBand anchor antenna data array.
+# Ultra-WideBand tag antenna data.
 #
 # Roberto Masocco <r.masocco@dotxautomation.com>
 # Lorenzo Bianchi <lnz.bnc@gmail.com>
@@ -15,7 +15,7 @@ uint8 n_anchors
 int8 quality_factor
 
 # Estimated tag position in the world frame [m]
-geometry_msgs/Point tag_position
+geometry_msgs/PointStamped tag_position
 
 # Anchors data array
 dua_interfaces/UWBAnchor[] anchors
