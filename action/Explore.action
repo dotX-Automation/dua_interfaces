@@ -1,0 +1,15 @@
+# Exploration action
+#
+# dotX Automation s.r.l.
+#
+# July 31, 2024
+
+# GOAL
+# True if it is the first time the action is called
+bool first
+---
+# RESULT
+# Operation result
+dua_interfaces/CommandResultStamped result
+---
+# FEEDBACK
