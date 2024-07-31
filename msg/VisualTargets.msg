@@ -4,6 +4,6 @@
 #
 # October 20, 2023
 
-dua_interfaces/Target[] targets
+vision_msgs/Detection2DArray targets
 
 sensor_msgs/Image image

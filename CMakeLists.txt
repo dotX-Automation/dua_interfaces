@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(vision_msgs REQUIRED)
 
 set(MSG_DIR "${CMAKE_CURRENT_SOURCE_DIR}/action")
 file(GLOB ACTION_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${MSG_DIR}/*.action")
@@ -22,12 +23,13 @@ file(GLOB MSG_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${MSG_DIR}/*.msg")
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${ACTION_FILES}
   ${MSG_FILES}
-  DEPENDENCIES geometry_msgs sensor_msgs std_msgs)
+  DEPENDENCIES geometry_msgs sensor_msgs std_msgs vision_msgs)
 
 ament_export_dependencies(
   action_msgs
   geometry_msgs
   sensor_msgs
-  std_msgs)
+  std_msgs
+  vision_msgs)
 
 ament_package()
