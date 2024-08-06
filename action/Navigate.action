@@ -5,8 +5,14 @@
 # June 16, 2023
 
 # GOAL
-# Target pose
-geometry_msgs/PoseStamped target
+# Header
+std_msgs/Header header
+
+# Target point
+geometry_msgs/Point target
+
+# Target heading (to be discared if outside range [-PI +PI])
+float64 heading
 ---
 # RESULT
 # Operation result
