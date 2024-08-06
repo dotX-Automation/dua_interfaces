@@ -14,8 +14,8 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(vision_msgs REQUIRED)
 
-set(MSG_DIR "${CMAKE_CURRENT_SOURCE_DIR}/action")
-file(GLOB ACTION_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${MSG_DIR}/*.action")
+set(ACTION_DIR "${CMAKE_CURRENT_SOURCE_DIR}/action")
+file(GLOB ACTION_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${ACTION_DIR}/*.action")
 
 set(MSG_DIR "${CMAKE_CURRENT_SOURCE_DIR}/msg")
 file(GLOB MSG_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${MSG_DIR}/*.msg")
