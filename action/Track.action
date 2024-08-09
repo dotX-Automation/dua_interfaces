@@ -1,0 +1,13 @@
+# Tracking of a given target.
+#
+# August 9, 2024
+
+# GOAL
+# Target ID
+string target_id
+---
+# RESULT
+# Operation result
+dua_interfaces/CommandResultStamped result
+---
+# FEEDBACK
