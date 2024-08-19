@@ -1,0 +1,23 @@
+# Precision landing operation.
+#
+# Lorenzo Bianchi <lnz.bnc@gmail.com>
+#
+# August 19, 2024
+
+# GOAL
+# Final altitude to reach
+float64 altitude
+
+# Perform final landing or just collimate on the target
+bool land
+
+# Decision altitude for landing operation
+float64 minimums
+---
+# RESULT
+# Operation result
+dua_interfaces/CommandResultStamped result
+---
+# FEEDBACK
+# Current errors (dimension may vary)
+geometry_msgs/Vector3Stamped errors
