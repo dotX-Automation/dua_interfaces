@@ -5,6 +5,15 @@
 # GOAL
 # Target ID
 string target_id
+
+# Indicates whether the tracking should stop when the target is centered in the field of view
+bool stop_when_centered
+
+# Indicates if the tracking should start from a specific side
+int8 LEFT=-1
+int8 CENTER=0
+int8 RIGHT=1
+int8 start_side 0
 ---
 # RESULT
 # Operation result
