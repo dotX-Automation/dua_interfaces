@@ -17,11 +17,15 @@ find_package(vision_msgs REQUIRED)
 set(ACTION_DIR "${CMAKE_CURRENT_SOURCE_DIR}/action")
 file(GLOB ACTION_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${ACTION_DIR}/*.action")
 
+set(SRV_DIR "${CMAKE_CURRENT_SOURCE_DIR}/srv")
+file(GLOB SRV_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${SRV_DIR}/*.srv")
+
 set(MSG_DIR "${CMAKE_CURRENT_SOURCE_DIR}/msg")
 file(GLOB MSG_FILES RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${MSG_DIR}/*.msg")
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${ACTION_FILES}
+  ${SRV_FILES}
   ${MSG_FILES}
   DEPENDENCIES geometry_msgs sensor_msgs std_msgs vision_msgs)
 
