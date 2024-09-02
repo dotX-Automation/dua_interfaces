@@ -13,6 +13,9 @@ bool land
 
 # Decision altitude for landing operation
 float64 minimums
+
+# Keep initial yaw or align with the target
+bool align
 ---
 # RESULT
 # Operation result
