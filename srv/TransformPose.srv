@@ -1,0 +1,14 @@
+# Transforms a pose from one frame to another
+#
+# September 30, 2024
+
+# REQUEST
+# Pose to transform
+geometry_msgs/PoseStamped pose
+
+# Target frame
+string target_frame
+---
+# RESPONSE
+# Transformed pose
+geometry_msgs/PoseStamped transformed_pose
