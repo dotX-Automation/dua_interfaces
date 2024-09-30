@@ -8,6 +8,7 @@ endif()
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(action_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
@@ -27,10 +28,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${ACTION_FILES}
   ${SRV_FILES}
   ${MSG_FILES}
-  DEPENDENCIES geometry_msgs sensor_msgs std_msgs vision_msgs)
+  DEPENDENCIES builtin_interfaces geometry_msgs sensor_msgs std_msgs vision_msgs)
 
 ament_export_dependencies(
   action_msgs
+  builtin_interfaces
   geometry_msgs
   sensor_msgs
   std_msgs
