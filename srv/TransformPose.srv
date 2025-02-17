@@ -3,12 +3,18 @@
 # September 30, 2024
 
 # REQUEST
-# Pose to transform
-geometry_msgs/PoseStamped pose
+# Source pose
+geometry_msgs/PoseStamped source_pose
 
 # Target frame
 string target_frame
+
+# Timeout
+builtin_interfaces/Duration timeout
 ---
 # RESPONSE
-# Transformed pose
-geometry_msgs/PoseStamped transformed_pose
+# Result
+dua_interfaces/CommandResultStamped result
+
+# Target pose
+geometry_msgs/PoseStamped target_pose
