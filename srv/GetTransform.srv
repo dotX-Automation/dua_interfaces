@@ -3,15 +3,21 @@
 # September 30, 2024
 
 # REQUEST
-# Frame
-string frame
+# Source frame
+string source_frame
 
-# Child frame
-string child_frame
+# Target frame
+string target_frame
 
 # Time
 builtin_interfaces/Time time
+
+# Timeout
+builtin_interfaces/Duration timeout
 ---
 # RESPONSE
+# Result
+dua_interfaces/CommandResultStamped result
+
 # Transform
 geometry_msgs/TransformStamped transform
