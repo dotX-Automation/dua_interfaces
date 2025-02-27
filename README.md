@@ -2,6 +2,10 @@
 
 ROS 2 interfaces for the Distributed Unified Architecture, aimed at robotics projects and more.
 
+**This project is now archived since after [this PR](https://github.com/dotX-Automation/dua-foundation/pull/2) this package has been split in more specialized packages.**
+
+**Thus, this project remains available to maintain backward compatibility with legacy targets.**
+
 ## Contents
 
 Refer to the individual interface files for more information.
